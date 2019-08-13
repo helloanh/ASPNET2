@@ -1,0 +1,108 @@
+/* add to have fixed height for cards */
+
+article.usa-card {
+    height: 340px;
+}
+
+.button-group label {
+    margin-right: 1em;
+}
+
+optgroup.usa-optgroup option {
+    /*display: none;*/
+}
+
+/*optgroup.user-optgroup {
+    color: black;
+}*/
+
+ul {
+    list-style: none;
+}
+
+.input-group.input-group-ads {
+    list-style: none;
+}
+
+select { color: white; max-width: 30rem; }
+
+input {
+
+	max-width: 30rem;
+}
+
+.form-inline { 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+select.select-name {
+    background: white;
+}
+
+
+p .usa-button-demo {
+    text-align: center;
+}
+.usa-button-demo {
+    -webkit-font-smoothing: antialiased;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: .5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #0071bc;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+}
+
+.usa-button-demo:hover {
+	background-color: #205493;
+}
+
+/*#business-rules *, #data-rules * {
+	background-color: #0071bc;
+}
+*/
+.usa-section-gray {
+    background-color: white;
+    color: #fff;
+}
+
+h1.va-page-title {
+    color: black;
+    text-align: center;
+}
+
+section.usa-section.usa-section-gray {
+    padding: 2rem;
+}
+
+section.usa-section.usa-section-gray h1 {
+    font-size: 2.25rem;
+}
+
+article.usa-card.usa-magpro {
+    height: 340px;
+}
+
+@media screen and (min-width: 800px){
+	.usa-section {
+	    padding-top: 1.75rem;
+	    padding-bottom: 1.75rem;
+	}
+}
+
+

@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{EE61B60F-A12D-4AD3-AA4F-64D5EA67FE63}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/MigrationFrameworks/Index.cshtml">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" Line="24" Column="10" />
+      <File FileName="Controllers/MigrationFrameworksController.cs" Line="47" Column="2" />
+      <File FileName="Models/BloggingContext.cs" Line="1" Column="1" />
+      <File FileName="Models/ErrorViewModel.cs" Line="11" Column="2" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
+      <File FileName="Views/MigrationFrameworks/Index.cshtml" Line="21" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Option id="ShowAllFiles" value="True" />
+          <Node name="EFGetStarted.AspNetCore.ExistingDb" expanded="True">
+            <Node name="Controllers" expanded="True" />
+            <Node name="Models" expanded="True" />
+            <Node name="obj" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Views" expanded="True">
+              <Node name="MigrationFrameworks" expanded="True" />
+            </Node>
+            <Node name="wwwroot" expanded="True" />
+            <Node name="EFGetStarted.AspNetCore.ExistingDb" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="MigrationFrameworks" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EFGetStarted.AspNetCore.ExistingDb PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

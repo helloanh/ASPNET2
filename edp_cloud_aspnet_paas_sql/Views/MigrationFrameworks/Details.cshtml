@@ -1,0 +1,32 @@
+﻿@model EFGetStarted.AspNetCore.ExistingDb.Models.MigrationFramework
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div class="usa-grid">
+    <h4>MigrationFramework</h4>
+    <hr />
+
+    <section class="usa-section usa-section-lighter" id="topissues">
+        <div class=" usa-grid">
+            <div class="usa-width-three-fourths">
+                <h2>
+                    @Html.DisplayFor(model => model.Title)  @Html.DisplayFor(model => model.Subtitle)<h2>
+
+
+
+                        <h3> Service Type </h3>
+                        <p>@Html.DisplayFor(model => model.ServiceType)</p>
+
+                        <h3>Definition</h3>
+                        <p>  @Html.DisplayFor(model => model.Definition)</p>
+
+            </div>
+
+        </div>
+    </section>
+    <a asp-action="Index">Back to List</a>
+</div>

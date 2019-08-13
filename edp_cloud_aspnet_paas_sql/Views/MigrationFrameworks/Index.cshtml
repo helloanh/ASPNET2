@@ -1,0 +1,66 @@
+﻿@model IEnumerable<EFGetStarted.AspNetCore.ExistingDb.Models.MigrationFramework>
+
+@{
+    ViewData["Title"] = "EDP Demo Home";
+}
+
+
+<section class="usa-section va-padding_topbottom_md">
+    <div class="usa-grid">
+        <div class="usa-width-one-whole">
+            <header><h2 id="heading-h2" ="va-title-bar">Cloud Migration Framework Context</h2></header>
+            <p>
+                Project teams should consider a best practice migration path to meet cloud migration
+                requirements. The bottom paths provide details on each migration framework and the corresponding
+                service models available for each.
+
+            </p>
+            <ul class="usa-unstyled-list va-button-card-grid-wide">
+                @foreach (var item in Model)
+                {
+                    <li>
+                        <div class="va-button-card va-button-card-light">
+
+                            <h2> @Html.DisplayFor(modelItem => item.Title) </h2>
+                            <h4>@Html.DisplayFor(modelItem => item.Subtitle)</h4>
+
+                            <div class="va-button-card-description">
+                                <p>
+                                    <em id="service-type-text">
+                                        Service Type:
+                                        @Html.DisplayFor(modelItem => item.ServiceType)
+                                    </em>
+                                    <br /><br />
+                                    @Html.DisplayFor(modelItem => item.Definition)
+                                </p>
+                            </div>
+
+                            <a asp-action="Details" asp-route-id="@item.MigrationFrameworkId">Details</a>
+                        </div>
+
+                    </li>
+
+
+
+                }
+
+            </ul>
+
+        </div>
+        <div class="usa-width-one-whole">
+            <h2 class="va-title-bar">
+                Cloud Migration Framework Graphical Representation
+
+            </h2>
+            <p>
+                The diagram below depicts a typical Cloud Migration Framework path that is recommended
+                by one of the leading CSPs.
+            </p>
+            <a href="https://www.oit.va.gov/library/files/edp/cloud/CCAEDP_MigrationFramework_v1.pdf">
+                <img src="~/images/cmf-graph.png" />
+            </a>
+
+        </div>
+    </div>
+
+</section>

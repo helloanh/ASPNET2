@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EDP.Cloud.AspNetCore.WebApp </title>
+
+    <!-- Stylesheets from OIT VA site-->
+    <link href="https://cdn.eo.va.gov/vendor/fa5/current/css/all.css" rel="stylesheet" />
+    <link href="~/css/uswds.css" rel="stylesheet" />
+    <link href="~/css/va-core.css" rel="stylesheet" />
+    <link href="~/css/va-theme.css" rel="stylesheet" />
+
+    <!-- addition for this landing page -->
+    <link href="~/css/demo.css" rel="stylesheet" />
+
+    <!--Base Javascript-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>
+
+        .va-button-card-light h3 {
+            display: none;
+        }
+
+        #service-type-text {
+            color: #112e51;
+        }
+
+        h2 {
+            color: #205493;
+        }
+
+        h2#heading-h2 {
+            color: #212121;
+        }
+
+    </style>
+    <header class="usa-header usa-header-extended" role="banner">
+        <!-- Site Menu BEGIN -->
+        <div class="usa-navbar">
+            <button class="usa-menu-btn">Menu</button>
+            <div class="usa-logo" id="logo"> <em class="usa-logo-text"> <a href="/web/index.cfm" accesskey="1" title="Home" aria-label="Home"><span class="va-logo">VA</span> | Microsoft Azure ASP.NET with SQL PaaS Database  </a> </em> </div>
+        </div>
+        <nav role="navigation" class="usa-nav">
+            <div class="usa-nav-inner">
+                <button class="usa-nav-close"> <img src="/web/_media/img/icons/close.svg" alt="close"></button>
+                <ul class="usa-nav-primary usa-accordion">
+                    <li><a href="/web/index.cfm" class="usa-nav-link"><i class="fas fa-home icon-left"></i> EDP Demo Home</p></a></li>
+
+                    <li class="nav-mobile">
+                        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="va-programs">
+                            <span>VA Programs and Service</span>
+                        </button>
+
+                    <li class="nav-mobile">
+                        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="va-resources">
+                            <span>Additional VA Resources</span>
+                        </button>
+                        <ul id="va-resources" class="usa-nav-submenu">
+                            <li><a href="https://explore.va.gov">Explore VA</a></li>
+                            <li><a href="https://www.va.gov/landing2_locations.htm">Find a VA Location</a></li>
+                            <li><a href="https://www.va.gov/vaforms/">VA Forms</a></li>
+                            <li><a href="https://www.va.gov/health/">Veterans Health Administration (VHA)</a></li>
+                            <li><a href="https://benefits.va.gov/benefits/">Veterans Benefits Administration (VBA)</a></li>
+                            <li><a href="https://cem.va.gov/">National Cemetery Administration (NCA)</a></li>
+                            <li><a href="https://www.va.gov/jobs/">Careers at VA</a></li>
+                            <li><a href="https://www.va.gov/COMMUNITYCARE/programs/veterans/VCP/index.asp">Veterans Choice Program</a></li>
+                            <li><a href="https://www.accesstocare.va.gov/">Access to Care</a></li>
+                            <li><a href="https://www.va.gov/landing2_business.htm">Doing Business with VA</a></li>
+                            <li><a href="https://www.va.gov/opa/">Public Affairs</a></li>
+                            <li><a href="https://www.va.gov/opa/pressrel/">News Releases</a></li>
+                        </ul>
+                    <li class="nav-mobile">
+                        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="policy">
+                            <span>Legal and Administrative</span>
+                        </button>
+                        <ul id="policy" class="usa-nav-submenu">
+                            <li><a href="https://www.va.gov/oei/docs/VA2018-2024strategicPlan.pdf">VA Strategic Plan</a></li>
+                            <li><a href="https://www.oprm.va.gov/privacy/">Privacy</a></li>
+                            <li><a href="hhttps://www.va.gov/web/standards/disclaimer.cfm">Disclaimers</a></li>
+                            <li><a href="https://www.va.gov/oig/">Inspector General</a></li>
+                            <li><a href="https://www.oprm.va.gov/foia/">FOIA</a></li>
+                            <li><a href="https://www.va.gov/orm/NOFEAR_Select.asp">No FEAR Act</a></lin>
+                            <li><a href="https://www.va.gov/accountability">Whistleblower and Rights Protection</a></li>
+                            <li><a href="https://www.va.gov/web/standards/">Website Policies</a></li>
+                            <li><a href="https://www.data.va.gov">Open Data</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+                <div class="usa-nav-secondary">
+
+                    <ul class="usa-unstyled-list usa-nav-secondary-links">
+                        <li class="js-search-button-container">
+                            <button class="usa-header-search-button js-search-button ">Search VA</button>
+                        </li>
+                        <li><a href="/web/sitemap.cfm"><i class="fa fa-sitemap icon-left" aria-hidden="true"></i>Sitemap</a></li>
+                        <li><a href="/web/contacts.cfm"><i class="fa fa-address-book icon-left" aria-hidden="true"></i>Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Site Menu End -->
+    </header>
+
+    @*<partial name="_CookieConsentPartial" />*@
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <footer style="padding-left: 20px;">
+        <p>&copy; 2018 - EDP.Cloud.AspNetCore.WebApp  </p>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

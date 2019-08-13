@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\MigrationFrameworks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\BlogsController.cs" />
+    <Compile Remove="Models\Post.cs" />
+    <Compile Remove="Views\MigrationFrameworks\Template.cs" />
+    <Compile Remove="Views\MigrationFrameworks\PreprocessedT4Template.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\MigrationFrameworks\Template.cshtml" />
+    <Content Remove="Views\MigrationFrameworks\Details.cshtml" />
+    <Content Remove="Views\Blogs\Create.cshtml" />
+    <Content Remove="Views\Blogs\Delete.cshtml" />
+    <Content Remove="Views\Blogs\Details.cshtml" />
+    <Content Remove="Views\Blogs\Edit.cshtml" />
+    <Content Remove="Views\Blogs\Index.cshtml" />
+    <Content Remove="Views\MigrationFrameworks\Template.cshtml" />
+    <Content Remove="Views\MigrationFrameworks\Create.cshtml" />
+    <Content Remove="Views\MigrationFrameworks\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Views\MigrationFrameworks\Details.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>Details.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\MigrationFrameworks\PreprocessedT4Template.tt" />
+  </ItemGroup>
+</Project>

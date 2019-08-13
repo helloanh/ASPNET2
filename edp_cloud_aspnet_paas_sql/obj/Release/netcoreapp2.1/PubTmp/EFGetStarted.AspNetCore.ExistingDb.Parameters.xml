@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="testBlogApp1" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^/Users/anhkimhoang/Documents/GitHub/ASPNET2/EntityFramework\.Docs/samples/core/GetStarted/AspNetCore/EFGetStarted\.AspNetCore\.ExistingDb/obj/Release/netcoreapp2\.1/PubTmp/Out/$" />
+  </parameter>
+</parameters>
